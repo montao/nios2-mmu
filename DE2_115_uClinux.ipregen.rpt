@@ -1,0 +1,347 @@
+IP Upgrade report for DE2_115_uClinux
+Sun Mar 12 13:05:57 2017
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Successfully Upgraded IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; IP Upgrade Summary                                                         ;
++------------------------------+---------------------------------------------+
+; IP Components Upgrade Status ; Passed - Sun Mar 12 13:05:57 2017           ;
+; Quartus Prime Version        ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Revision Name                ; DE2_115_uClinux                             ;
+; Top-level Entity Name        ; DE2_115_uClinux                             ;
+; Family                       ; Cyclone IV E                                ;
++------------------------------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Successfully Upgraded IP Components                                                                                         ;
++-------------+----------------+---------+-------------------------+----------------------+-------------------------+---------+
+; Entity Name ; Component Name ; Version ; Original Source File    ; Generation File Path ; New Source File         ; Message ;
++-------------+----------------+---------+-------------------------+----------------------+-------------------------+---------+
+; altpll0     ; ALTPLL         ; 12.1    ; altpll0.qip             ; altpll0.vhd          ; altpll0.qip             ;         ;
+; qsys        ; qsys           ; 12.1    ; qsys/synthesis/qsys.qip ; qsys.qsys            ; qsys/synthesis/qsys.qip ;         ;
++-------------+----------------+---------+-------------------------+----------------------+-------------------------+---------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "altpll0.vhd" to "altpll0.BAK.vhd"
+Info (11837): Started upgrading IP component ALTPLL with file "altpll0.vhd"
+Info (11902): Backing up file "qsys.qsys" to "qsys.BAK.qsys"
+Info (11902): Backing up file "qsys/synthesis/qsys.v" to "qsys.BAK.v"
+Info (11837): Started upgrading IP component qsys with file "qsys.qsys"
+Info: 2017.03.12.13:04:41 Info: Starting to upgrade the IP cores in the Qsys system
+Info: 2017.03.12.13:04:42 Info: Upgrading from core type Nios II (Classic) Processor with version 16.1 to core type Nios II Processor with version 16.1
+Info: 2017.03.12.13:04:42 Info: Migration Successful
+Info: 2017.03.12.13:04:42 Info: Finished upgrading the ip cores
+Info: 2017.03.12.13:05:00 Info: Saving generation log to /home/developer/Downloads/DE2_115_uClinux/qsys
+Info: 2017.03.12.13:05:00 Info: Starting: Create simulation model
+Info: 2017.03.12.13:05:00 Info: Loading DE2_115_uClinux
+Info: 2017.03.12.13:05:00 Info: Reading input file
+Info: 2017.03.12.13:05:00 Info: Adding clk_50 [clock_source 16.1]
+Info: 2017.03.12.13:05:00 Info: Parameterizing module clk_50
+2017.03.12.13:05:00 Info: Adding cpu [altera_nios2_gen2 16.1]
+Info: 2017.03.12.13:05:00 Info: Parameterizing module cpu
+Info: 2017.03.12.13:05:00 Info: Adding jtag [altera_avalon_jtag_uart 16.1]
+Info: 2017.03.12.13:05:00 Info: Parameterizing module jtag
+Info: 2017.03.12.13:05:00 Info: Adding ram_mmu [altera_avalon_onchip_memory2 16.1]
+Info: 2017.03.12.13:05:00 Info: Parameterizing module ram_mmu
+Info: 2017.03.12.13:05:00 Info: Adding ram_re [altera_avalon_onchip_memory2 16.1]
+Info: 2017.03.12.13:05:00 Info: Parameterizing module ram_re
+Info: 2017.03.12.13:05:00 Info: Adding sdram [altera_avalon_new_sdram_controller 16.1]
+Info: 2017.03.12.13:05:00 Info: Parameterizing module sdram
+Info: 2017.03.12.13:05:00 Info: Adding timer [altera_avalon_timer 16.1]
+Info: 2017.03.12.13:05:00 Info: Parameterizing module timer
+Info: 2017.03.12.13:05:00 Info: Adding uart [altera_avalon_uart 16.1]
+Info: 2017.03.12.13:05:00 Info: Parameterizing module uart
+Info: 2017.03.12.13:05:00 Info: Building connections
+Info: 2017.03.12.13:05:00 Info: Parameterizing connections
+Info: 2017.03.12.13:05:00 Info: Validating
+Info: 2017.03.12.13:05:01 Info: Done reading input file
+Info: 2017.03.12.13:05:01 Info: qsys.jtag: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2017.03.12.13:05:01 Info: qsys.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: 2017.03.12.13:05:02 Info: qsys: Generating qsys "qsys" for SIM_VERILOG
+Info: 2017.03.12.13:05:06 Info: cpu: "qsys" instantiated altera_nios2_gen2 "cpu"
+Info: 2017.03.12.13:05:06 Info: jtag: Starting RTL generation for module 'qsys_jtag'
+Info: 2017.03.12.13:05:06 Info: jtag:   Generation command is [exec /opt/intelFPGA_lite/16.1/quartus/linux64/perl/bin/perl -I /opt/intelFPGA_lite/16.1/quartus/linux64/perl/lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=qsys_jtag --dir=/tmp/alt7237_1685809593379207647.dir/0001_jtag_gen/ --quartus_dir=/opt/intelFPGA_lite/16.1/quartus --verilog --config=/tmp/alt7237_1685809593379207647.dir/0001_jtag_gen//qsys_jtag_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt7237_1685809593379207647.dir/0001_jtag_gen
+Info: 2017.03.12.13:05:07 Info: jtag: Done RTL generation for module 'qsys_jtag'
+Info: 2017.03.12.13:05:07 Info: jtag: "qsys" instantiated altera_avalon_jtag_uart "jtag"
+Info: 2017.03.12.13:05:07 Info: ram_mmu: Starting RTL generation for module 'qsys_ram_mmu'
+Info: 2017.03.12.13:05:07 Info: ram_mmu:   Generation command is [exec /opt/intelFPGA_lite/16.1/quartus/linux64/perl/bin/perl -I /opt/intelFPGA_lite/16.1/quartus/linux64/perl/lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=qsys_ram_mmu --dir=/tmp/alt7237_1685809593379207647.dir/0002_ram_mmu_gen/ --quartus_dir=/opt/intelFPGA_lite/16.1/quartus --verilog --config=/tmp/alt7237_1685809593379207647.dir/0002_ram_mmu_gen//qsys_ram_mmu_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt7237_1685809593379207647.dir/0002_ram_mmu_gen
+Info: 2017.03.12.13:05:07 Info: ram_mmu: Done RTL generation for module 'qsys_ram_mmu'
+Info: 2017.03.12.13:05:07 Info: ram_mmu: "qsys" instantiated altera_avalon_onchip_memory2 "ram_mmu"
+Info: 2017.03.12.13:05:07 Info: sdram: Starting RTL generation for module 'qsys_sdram'
+Info: 2017.03.12.13:05:07 Info: sdram:   Generation command is [exec /opt/intelFPGA_lite/16.1/quartus/linux64/perl/bin/perl -I /opt/intelFPGA_lite/16.1/quartus/linux64/perl/lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=qsys_sdram --dir=/tmp/alt7237_1685809593379207647.dir/0003_sdram_gen/ --quartus_dir=/opt/intelFPGA_lite/16.1/quartus --verilog --config=/tmp/alt7237_1685809593379207647.dir/0003_sdram_gen//qsys_sdram_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt7237_1685809593379207647.dir/0003_sdram_gen
+Info: 2017.03.12.13:05:07 Info: sdram: Done RTL generation for module 'qsys_sdram'
+Info: 2017.03.12.13:05:07 Info: sdram: "qsys" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: 2017.03.12.13:05:07 Info: timer: Starting RTL generation for module 'qsys_timer'
+Info: 2017.03.12.13:05:07 Info: timer:   Generation command is [exec /opt/intelFPGA_lite/16.1/quartus/linux64//perl/bin/perl -I /opt/intelFPGA_lite/16.1/quartus/linux64//perl/lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=qsys_timer --dir=/tmp/alt7237_1685809593379207647.dir/0004_timer_gen/ --quartus_dir=/opt/intelFPGA_lite/16.1/quartus --verilog --config=/tmp/alt7237_1685809593379207647.dir/0004_timer_gen//qsys_timer_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt7237_1685809593379207647.dir/0004_timer_gen
+Info: 2017.03.12.13:05:07 Info: timer: Done RTL generation for module 'qsys_timer'
+Info: 2017.03.12.13:05:07 Info: timer: "qsys" instantiated altera_avalon_timer "timer"
+Info: 2017.03.12.13:05:07 Info: uart: Starting RTL generation for module 'qsys_uart'
+Info: 2017.03.12.13:05:07 Info: uart:   Generation command is [exec /opt/intelFPGA_lite/16.1/quartus/linux64/perl/bin/perl -I /opt/intelFPGA_lite/16.1/quartus/linux64/perl/lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=qsys_uart --dir=/tmp/alt7237_1685809593379207647.dir/0005_uart_gen/ --quartus_dir=/opt/intelFPGA_lite/16.1/quartus --verilog --config=/tmp/alt7237_1685809593379207647.dir/0005_uart_gen//qsys_uart_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt7237_1685809593379207647.dir/0005_uart_gen
+Info: 2017.03.12.13:05:08 Info: uart: Done RTL generation for module 'qsys_uart'
+Info: 2017.03.12.13:05:08 Info: uart: "qsys" instantiated altera_avalon_uart "uart"
+Info: 2017.03.12.13:05:08 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2017.03.12.13:05:09 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: 2017.03.12.13:05:09 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: 2017.03.12.13:05:09 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: 2017.03.12.13:05:09 Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: 2017.03.12.13:05:09 Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: 2017.03.12.13:05:09 Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: 2017.03.12.13:05:10 Info: mm_interconnect_0: "qsys" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: 2017.03.12.13:05:10 Info: irq_mapper: "qsys" instantiated altera_irq_mapper "irq_mapper"
+Info: 2017.03.12.13:05:10 Info: rst_controller: "qsys" instantiated altera_reset_controller "rst_controller"
+Info: 2017.03.12.13:05:10 Info: cpu: Starting RTL generation for module 'qsys_cpu_cpu'
+Info: 2017.03.12.13:05:10 Info: cpu:   Generation command is [exec /opt/intelFPGA_lite/16.1/quartus/linux64//eperlcmd -I /opt/intelFPGA_lite/16.1/quartus/linux64//perl/lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /opt/intelFPGA_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=qsys_cpu_cpu --dir=/tmp/alt7237_1685809593379207647.dir/0008_cpu_gen/ --quartus_bindir=/opt/intelFPGA_lite/16.1/quartus/linux64/ --verilog --config=/tmp/alt7237_1685809593379207647.dir/0008_cpu_gen//qsys_cpu_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt7237_1685809593379207647.dir/0008_cpu_gen
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:10 (*) Starting Nios II generation
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:10 (*)   Checking for plaintext license.
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:11 (*)   Plaintext license not found.
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:11 (*)   Checking for encrypted license (non-evaluation).
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:11 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:11 (*)   Elaborating CPU configuration settings
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:11 (*)   Creating all objects for CPU
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:11 (*)     Testbench
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:12 (*)     Instruction decoding
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:12 (*)       Instruction fields
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:12 (*)       Instruction decodes
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:12 (*)       Signals for RTL simulation waveforms
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:12 (*)       Instruction controls
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:12 (*)     Pipeline frontend
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:12 (*)       Micro-ITLB
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:13 (*)     Pipeline backend
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:13 (*)       Micro-DTLB
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:14 (*)     TLB
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:15 (*)   Creating '/tmp/alt7237_1685809593379207647.dir/0008_cpu_gen/
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:15 (*)   Generating RTL from CPU objects
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:17 (*)   Creating encrypted RTL
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:17 (*)   Creating IP functional simulation model
+Info: 2017.03.12.13:05:38 Info: cpu: # 2017.03.12 13:05:38 (*) Done Nios II generation
+Info: 2017.03.12.13:05:38 Info: cpu: Done RTL generation for module 'qsys_cpu_cpu'
+Info: 2017.03.12.13:05:38 Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
+Info: 2017.03.12.13:05:38 Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
+Info: 2017.03.12.13:05:38 Info: jtag_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_avalon_jtag_slave_translator"
+Info: 2017.03.12.13:05:38 Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
+Info: 2017.03.12.13:05:38 Info: jtag_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_avalon_jtag_slave_agent"
+Info: 2017.03.12.13:05:38 Info: jtag_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_avalon_jtag_slave_agent_rsp_fifo"
+Info: 2017.03.12.13:05:38 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: 2017.03.12.13:05:38 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: 2017.03.12.13:05:38 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: 2017.03.12.13:05:38 Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: 2017.03.12.13:05:38 Info: router_008: "mm_interconnect_0" instantiated altera_merlin_router "router_008"
+Info: 2017.03.12.13:05:38 Info: cpu_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "cpu_data_master_limiter"
+Info: 2017.03.12.13:05:38 Info: Reusing file /home/developer/Downloads/DE2_115_uClinux/qsys/simulation/submodules
+Info: 2017.03.12.13:05:38 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2017.03.12.13:05:38 Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: 2017.03.12.13:05:38 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2017.03.12.13:05:38 Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: 2017.03.12.13:05:38 Info: Reusing file /home/developer/Downloads/DE2_115_uClinux/qsys/simulation/submodules
+Info: 2017.03.12.13:05:38 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2017.03.12.13:05:38 Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: 2017.03.12.13:05:38 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2017.03.12.13:05:38 Info: Reusing file /home/developer/Downloads/DE2_115_uClinux/qsys/simulation/submodules
+Info: 2017.03.12.13:05:38 Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: 2017.03.12.13:05:38 Info: Reusing file /home/developer/Downloads/DE2_115_uClinux/qsys/simulation/submodules
+Info: 2017.03.12.13:05:38 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: 2017.03.12.13:05:39 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: 2017.03.12.13:05:39 Info: qsys: Done "qsys" with 32 modules, 64 files
+Info: 2017.03.12.13:05:39 Info: qsys-generate succeeded.
+Info: 2017.03.12.13:05:39 Info: Finished: Create simulation model
+Info: 2017.03.12.13:05:39 Info: Starting: Create Modelsim Project.
+Info: 2017.03.12.13:05:39 Info: sim-script-gen --spd=/home/developer/Downloads/DE2_115_uClinux/qsys/qsys.spd --output-directory=/home/developer/Downloads/DE2_115_uClinux/qsys/simulation
+Info: 2017.03.12.13:05:39 Info: Doing: ip-make-simscript --spd=/home/developer/Downloads/DE2_115_uClinux/qsys/qsys.spd --output-directory=/home/developer/Downloads/DE2_115_uClinux/qsys/simulation
+Info: 2017.03.12.13:05:39 Info: Generating the following file(s) for MODELSIM simulator in /home/developer/Downloads/DE2_115_uClinux/qsys/simulation
+Info: 2017.03.12.13:05:39 Info:     mentor
+Info: 2017.03.12.13:05:39 Info: Generating the following file(s) for VCS simulator in /home/developer/Downloads/DE2_115_uClinux/qsys/simulation
+Info: 2017.03.12.13:05:39 Info:     synopsys/vcs
+Info: 2017.03.12.13:05:39 Info: Generating the following file(s) for VCSMX simulator in /home/developer/Downloads/DE2_115_uClinux/qsys/simulation
+Info: 2017.03.12.13:05:39 Info:     synopsys/vcsmx
+Info: 2017.03.12.13:05:39 Info:     synopsys/vcsmx
+Info: 2017.03.12.13:05:39 Info: Generating the following file(s) for NCSIM simulator in /home/developer/Downloads/DE2_115_uClinux/qsys/simulation
+Info: 2017.03.12.13:05:39 Info:     cadence
+Info: 2017.03.12.13:05:39 Info:     cadence
+Info: 2017.03.12.13:05:39 Info:     cadence
+Info: 2017.03.12.13:05:39 Info:     30 .cds.lib files in cadence/cds_libs
+Info: 2017.03.12.13:05:39 Info: Generating the following file(s) for RIVIERA simulator in /home/developer/Downloads/DE2_115_uClinux/qsys/simulation
+Info: 2017.03.12.13:05:39 Info:     aldec
+Info: 2017.03.12.13:05:39 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /home/developer/Downloads/DE2_115_uClinux/qsys/simulation
+Info: 2017.03.12.13:05:39 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: 2017.03.12.13:05:39 Info: Loading DE2_115_uClinux
+Info: 2017.03.12.13:05:39 Info: Reading input file
+Info: 2017.03.12.13:05:39 Info: Adding clk_50 [clock_source 16.1]
+Info: 2017.03.12.13:05:39 Info: Parameterizing module clk_50
+Info: 2017.03.12.13:05:39 Info: Adding cpu [altera_nios2_gen2 16.1]
+Info: 2017.03.12.13:05:39 Info: Parameterizing module cpu
+Info: 2017.03.12.13:05:39 Info: Adding jtag [altera_avalon_jtag_uart 16.1]
+Info: 2017.03.12.13:05:39 Info: Parameterizing module jtag
+Info: 2017.03.12.13:05:39 Info: Adding ram_mmu [altera_avalon_onchip_memory2 16.1]
+Info: 2017.03.12.13:05:39 Info: Parameterizing module ram_mmu
+Info: 2017.03.12.13:05:39 Info: Adding ram_re [altera_avalon_onchip_memory2 16.1]
+Info: 2017.03.12.13:05:39 Info: Parameterizing module ram_re
+Info: 2017.03.12.13:05:39 Info: Adding sdram [altera_avalon_new_sdram_controller 16.1]
+Info: 2017.03.12.13:05:39 Info: Parameterizing module sdram
+Info: 2017.03.12.13:05:39 Info: Adding timer [altera_avalon_timer 16.1]
+Info: 2017.03.12.13:05:39 Info: Parameterizing module timer
+Info: 2017.03.12.13:05:39 Info: Adding uart [altera_avalon_uart 16.1]
+Info: 2017.03.12.13:05:39 Info: Parameterizing module uart
+Info: 2017.03.12.13:05:39 Info: Building connections
+Info: 2017.03.12.13:05:39 Info: Parameterizing connections
+Info: 2017.03.12.13:05:39 Info: Validating
+Info: 2017.03.12.13:05:40 Info: Done reading input file
+Info: 2017.03.12.13:05:40 Info: qsys.jtag: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2017.03.12.13:05:40 Info: qsys.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: 2017.03.12.13:05:41 Info: qsys-generate succeeded.
+Info: 2017.03.12.13:05:41 Info: Finished: Create block symbol file (.bsf)
+Info: 2017.03.12.13:05:41 Info:
+Info: 2017.03.12.13:05:41 Info: Starting: Create HDL design files for synthesis
+Info: 2017.03.12.13:05:41 Info: Loading DE2_115_uClinux
+Info: 2017.03.12.13:05:41 Info: Reading input file
+Info: 2017.03.12.13:05:41 Info: Adding clk_50 [clock_source 16.1]
+Info: 2017.03.12.13:05:41 Info: Parameterizing module clk_50
+Info: 2017.03.12.13:05:41 Info: Adding cpu [altera_nios2_gen2 16.1]
+Info: 2017.03.12.13:05:41 Info: Parameterizing module cpu
+Info: 2017.03.12.13:05:41 Info: Adding jtag [altera_avalon_jtag_uart 16.1]
+Info: 2017.03.12.13:05:41 Info: Parameterizing module jtag
+Info: 2017.03.12.13:05:41 Info: Adding ram_mmu [altera_avalon_onchip_memory2 16.1]
+Info: 2017.03.12.13:05:41 Info: Parameterizing module ram_mmu
+Info: 2017.03.12.13:05:41 Info: Adding ram_re [altera_avalon_onchip_memory2 16.1]
+Info: 2017.03.12.13:05:41 Info: Parameterizing module ram_re
+Info: 2017.03.12.13:05:41 Info: Adding sdram [altera_avalon_new_sdram_controller 16.1]
+Info: 2017.03.12.13:05:41 Info: Parameterizing module sdram
+Info: 2017.03.12.13:05:41 Info: Adding timer [altera_avalon_timer 16.1]
+Info: 2017.03.12.13:05:41 Info: Parameterizing module timer
+Info: 2017.03.12.13:05:41 Info: Adding uart [altera_avalon_uart 16.1]
+Info: 2017.03.12.13:05:41 Info: Parameterizing module uart
+Info: 2017.03.12.13:05:41 Info: Building connections
+Info: 2017.03.12.13:05:41 Info: Parameterizing connections
+Info: 2017.03.12.13:05:41 Info: Validating
+Info: 2017.03.12.13:05:41 Info: Done reading input file
+Info: 2017.03.12.13:05:42 Info: qsys.jtag: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2017.03.12.13:05:42 Info: qsys.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: 2017.03.12.13:05:42 Info: qsys: Generating qsys "qsys" for QUARTUS_SYNTH
+Info: 2017.03.12.13:05:45 Info: cpu: "qsys" instantiated altera_nios2_gen2 "cpu"
+Info: 2017.03.12.13:05:45 Info: jtag: Starting RTL generation for module 'qsys_jtag'
+Info: 2017.03.12.13:05:45 Info: jtag:   Generation command is [exec /opt/intelFPGA_lite/16.1/quartus/linux64/perl/bin/perl -I /opt/intelFPGA_lite/16.1/quartus/linux64/perl/lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=qsys_jtag --dir=/tmp/alt7237_1685809593379207647.dir/0030_jtag_gen/ --quartus_dir=/opt/intelFPGA_lite/16.1/quartus --verilog --config=/tmp/alt7237_1685809593379207647.dir/0030_jtag_gen/
+Info: 2017.03.12.13:05:45 Info: jtag: Done RTL generation for module 'qsys_jtag'
+Info: 2017.03.12.13:05:45 Info: jtag: "qsys" instantiated altera_avalon_jtag_uart "jtag"
+Info: 2017.03.12.13:05:45 Info: ram_mmu: Starting RTL generation for module 'qsys_ram_mmu'
+Info: 2017.03.12.13:05:45 Info: ram_mmu:   Generation command is [exec /opt/intelFPGA_lite/16.1/quartus/linux64/perl/bin/perl -I /opt/intelFPGA_lite/16.1/quartus/linux64/perl/lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=qsys_ram_mmu --dir=/tmp/alt7237_1685809593379207647.dir/0031_ram_mmu_gen/ --quartus_dir=/opt/intelFPGA_lite/16.1/quartus --verilog --config=/tmp/alt7237_1685809593379207647.dir/0031_ram_mmu_gen/
+Info: 2017.03.12.13:05:45 Info: ram_mmu: Done RTL generation for module 'qsys_ram_mmu'
+Info: 2017.03.12.13:05:45 Info: ram_mmu: "qsys" instantiated altera_avalon_onchip_memory2 "ram_mmu"
+Info: 2017.03.12.13:05:45 Info: sdram: Starting RTL generation for module 'qsys_sdram'
+Info: 2017.03.12.13:05:45 Info: sdram:   Generation command is [exec /opt/intelFPGA_lite/16.1/quartus/linux64/perl/bin/perl -I /opt/intelFPGA_lite/16.1/quartus/linux64/perl/lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=qsys_sdram --dir=/tmp/alt7237_1685809593379207647.dir/0032_sdram_gen/ --quartus_dir=/opt/intelFPGA_lite/16.1/quartus --verilog --config=/tmp/alt7237_1685809593379207647.dir/0032_sdram_gen/
+Info: 2017.03.12.13:05:46 Info: sdram: Done RTL generation for module 'qsys_sdram'
+Info: 2017.03.12.13:05:46 Info: sdram: "qsys" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: 2017.03.12.13:05:46 Info: timer: Starting RTL generation for module 'qsys_timer'
+Info: 2017.03.12.13:05:46 Info: timer:   Generation command is [exec /opt/intelFPGA_lite/16.1/quartus/linux64//perl/bin/perl -I /opt/intelFPGA_lite/16.1/quartus/linux64//perl/lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=qsys_timer --dir=/tmp/alt7237_1685809593379207647.dir/0033_timer_gen/ --quartus_dir=/opt/intelFPGA_lite/16.1/quartus --verilog --config=/tmp/alt7237_1685809593379207647.dir/0033_timer_gen/
+Info: 2017.03.12.13:05:46 Info: timer: Done RTL generation for module 'qsys_timer'
+Info: 2017.03.12.13:05:46 Info: timer: "qsys" instantiated altera_avalon_timer "timer"
+Info: 2017.03.12.13:05:46 Info: uart: Starting RTL generation for module 'qsys_uart'
+Info: 2017.03.12.13:05:46 Info: uart:   Generation command is [exec /opt/intelFPGA_lite/16.1/quartus/linux64/perl/bin/perl -I /opt/intelFPGA_lite/16.1/quartus/linux64/perl/lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- /opt/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=qsys_uart --dir=/tmp/alt7237_1685809593379207647.dir/0034_uart_gen/ --quartus_dir=/opt/intelFPGA_lite/16.1/quartus --verilog --config=/tmp/alt7237_1685809593379207647.dir/0034_uart_gen/
+Info: 2017.03.12.13:05:46 Info: uart: Done RTL generation for module 'qsys_uart'
+Info: 2017.03.12.13:05:46 Info: uart: "qsys" instantiated altera_avalon_uart "uart"
+Info: 2017.03.12.13:05:47 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2017.03.12.13:05:47 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: 2017.03.12.13:05:47 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: 2017.03.12.13:05:47 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: 2017.03.12.13:05:47 Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: 2017.03.12.13:05:47 Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: 2017.03.12.13:05:47 Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: 2017.03.12.13:05:48 Info: mm_interconnect_0: "qsys" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: 2017.03.12.13:05:48 Info: irq_mapper: "qsys" instantiated altera_irq_mapper "irq_mapper"
+Info: 2017.03.12.13:05:48 Info: rst_controller: "qsys" instantiated altera_reset_controller "rst_controller"
+Info: 2017.03.12.13:05:48 Info: cpu: Starting RTL generation for module 'qsys_cpu_cpu'
+Info: 2017.03.12.13:05:48 Info: cpu:   Generation command is [exec /opt/intelFPGA_lite/16.1/quartus/linux64//eperlcmd -I /opt/intelFPGA_lite/16.1/quartus/linux64//perl/lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /opt/intelFPGA_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /opt/intelFPGA_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=qsys_cpu_cpu --dir=/tmp/alt7237_1685809593379207647.dir/0037_cpu_gen/ --quartus_bindir=/opt/intelFPGA_lite/16.1/quartus/linux64/ --verilog --config=/tmp/alt7237_1685809593379207647.dir/0037_cpu_gen/
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:48 (*) Starting Nios II generation
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:48 (*)   Checking for plaintext license.
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:48 (*)   Plaintext license not found.
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:48 (*)   Checking for encrypted license (non-evaluation).
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:49 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:49 (*)   Elaborating CPU configuration settings
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:49 (*)   Creating all objects for CPU
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:49 (*)     Testbench
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:49 (*)     Instruction decoding
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:49 (*)       Instruction fields
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:49 (*)       Instruction decodes
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:50 (*)       Signals for RTL simulation waveforms
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:50 (*)       Instruction controls
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:50 (*)     Pipeline frontend
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:50 (*)       Micro-ITLB
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:50 (*)     Pipeline backend
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:51 (*)       Micro-DTLB
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:51 (*)     TLB
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:53 (*)   Generating RTL from CPU objects
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:55 (*)   Creating encrypted RTL
+Info: 2017.03.12.13:05:56 Info: cpu: # 2017.03.12 13:05:56 (*) Done Nios II generation
+Info: 2017.03.12.13:05:56 Info: cpu: Done RTL generation for module 'qsys_cpu_cpu'
+Info: 2017.03.12.13:05:56 Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
+Info: 2017.03.12.13:05:56 Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
+Info: 2017.03.12.13:05:56 Info: jtag_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_avalon_jtag_slave_translator"
+Info: 2017.03.12.13:05:56 Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
+Info: 2017.03.12.13:05:56 Info: jtag_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_avalon_jtag_slave_agent"
+2017.03.12.13:05:56 Info: jtag_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_avalon_jtag_slave_agent_rsp_fifo"
+Info: 2017.03.12.13:05:56 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: 2017.03.12.13:05:56 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: 2017.03.12.13:05:56 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: 2017.03.12.13:05:56 Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: 2017.03.12.13:05:56 Info: router_008: "mm_interconnect_0" instantiated altera_merlin_router "router_008"
+Info: 2017.03.12.13:05:56 Info: cpu_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "cpu_data_master_limiter"
+Info: 2017.03.12.13:05:56 Info: Reusing file /home/developer/Downloads/DE2_115_uClinux/qsys/synthesis/submodules
+Info: 2017.03.12.13:05:56 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2017.03.12.13:05:56 Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: 2017.03.12.13:05:56 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2017.03.12.13:05:56 Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: 2017.03.12.13:05:56 Info: Reusing file /home/developer/Downloads/DE2_115_uClinux/qsys/synthesis/submodules
+Info: 2017.03.12.13:05:56 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2017.03.12.13:05:56 Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: 2017.03.12.13:05:56 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2017.03.12.13:05:56 Info: Reusing file /home/developer/Downloads/DE2_115_uClinux/qsys/synthesis/submodules
+Info: 2017.03.12.13:05:56 Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: 2017.03.12.13:05:56 Info: Reusing file /home/developer/Downloads/DE2_115_uClinux/qsys/synthesis/submodules
+Info: 2017.03.12.13:05:56 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: 2017.03.12.13:05:56 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+2017.03.12.13:05:56 Info: qsys: Done "qsys" with 32 modules, 52 files
+Info: 2017.03.12.13:05:57 Info: qsys-generate succeeded.
+Info: 2017.03.12.13:05:57 Info: Finished: Create HDL design files for synthesis
+Info (11131): Completed upgrading IP component ALTPLL with file "altpll0.vhd"
+Info (11131): Completed upgrading IP component qsys with file "qsys.qsys"
+Info (23030): Evaluation of Tcl script /opt/intelFPGA_lite/16.1/quartus/common/tcl/internal/ip_regen/ip_regen.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 1067 megabytes
+    Info: Processing ended: Sun Mar 12 13:05:59 2017
+    Info: Elapsed time: 00:01:41
+    Info: Total CPU time (on all processors): 00:03:17
+
+

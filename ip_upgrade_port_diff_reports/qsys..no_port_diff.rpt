@@ -1,0 +1,23 @@
+IP Ports Diff Report for qsys
+Sun Mar 12 13:05:58 2017
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. IP Information
+
+
+
++----------------------------------------------+
+; IP Information                               ;
++----------------------+-----------------------+
+; IP Variation Name    ; qsys                  ;
+; Prior Version        ; 12.1                  ;
+; New Version          ;                       ;
+; New File             ; qsys/synthesis/qsys.v ;
+; Has Port Differences ; No                    ;
++----------------------+-----------------------+
+
+

@@ -1,0 +1,253 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "SDRAM_CASn",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_CSn",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_RASn",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_WEn",
+					"strict" : false
+				},
+				{
+					"name" : "UART_TX",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADD[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADD[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADD[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADD[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADD[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADD[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_ADD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_BA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_BA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQM[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[31]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[30]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[29]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[28]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[27]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[26]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[25]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[24]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[23]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[22]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[21]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[20]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[19]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[18]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[17]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[16]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[15]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[14]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[13]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SDRAM_DQ[0]",
+					"strict" : false
+				},
+				{
+					"name" : "UART_RX",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

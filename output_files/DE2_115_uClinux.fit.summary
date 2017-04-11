@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Apr  2 09:24:19 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : DE2_115_uClinux
+Top-level Entity Name : DE2_115_uClinux
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 5,730 / 114,480 ( 5 % )
+    Total combinational functions : 5,002 / 114,480 ( 4 % )
+    Dedicated logic registers : 3,669 / 114,480 ( 3 % )
+Total registers : 3788
+Total pins : 60 / 529 ( 11 % )
+Total virtual pins : 0
+Total memory bits : 85,184 / 3,981,312 ( 2 % )
+Embedded Multiplier 9-bit elements : 6 / 532 ( 1 % )
+Total PLLs : 1 / 4 ( 25 % )
